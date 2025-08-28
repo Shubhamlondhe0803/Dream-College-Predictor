@@ -1,0 +1,98 @@
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;         
+  min-height: 100vh; 
+  width: 100%;
+  padding-left: 50px;         
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  background-image: url("C:\Users\shubh\OneDrive\Desktop\MainProject\ProjectFrontend\my-app\src\assets\brainstorm-meeting.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.2s ease-in-out;
+  background-color: transparent;
+}
+
+form {
+  width: 90%;           
+  max-width: 500px;     
+  padding: 30px 40px;   
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(238, 3, 3, 0.2);
+  animation: slideUp 0.8s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+h3.header {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;     
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+input,
+select {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  width: 100%;   
+}
+
+input:focus,
+select:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 8px rgba(33, 147, 176, 0.5);
+}
+
+.submit-btn {
+  width: 50%;           
+  padding: 16px;
+  display: block;
+  margin: 15px auto 0 auto;
+  background: #10eb0c;
+  color: #150202;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background: #4dde30;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

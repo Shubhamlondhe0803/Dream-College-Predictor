@@ -1,0 +1,77 @@
+.login-container {
+  width: 90%;
+  height: 100vh;
+  background-image: url("C:\Users\shubh\OneDrive\Desktop\MainProject\ProjectFrontend\my-app\src\assets\group-successful-happy-smiling-graduates-generated-by-ai.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   
+  justify-content: center; 
+  font-family: Arial, sans-serif;
+  padding-left: 120px;      
+  background-color: transparent;
+}
+
+.login-container h2 {
+  color: rgb(155, 243, 87);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.login-container form {
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.login-container input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+}
+
+.login-container button {
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #0056b3;
+}
+
+/* Signup text */
+.login-container p {
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.login-container a {
+  color: #ffdd57;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

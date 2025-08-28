@@ -1,0 +1,172 @@
+.dashboard-main {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  background-image: url("C:\Users\shubh\OneDrive\Desktop\MainProject\ProjectFrontend\my-app\src\assets\StudentImg.png");
+  background-size:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar with solid color */
+.sidebar {  
+  width: 550px;
+  height: 90vh;
+  padding: 20px;
+  color: rgb(244, 114, 8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  background: #1a252f; /* 🔹 Solid bar color */
+}
+
+/* User Section */
+.user-section {
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #3ce509;
+}
+
+.username-text {
+  font-weight: bold;
+  color: #ffdd57;
+}
+
+/* Profile Photo */
+.profile-wrapper {
+  position: relative;
+}
+
+.user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #7bf168;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(205, 11, 11, 0.6);
+}
+
+/* User Menu */
+.user-menu {
+  margin-top: 15px;
+  padding: 15px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.user-email {
+  font-size: 0.9rem;
+  color: #0e0101;
+}
+
+.upload-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #f1c40f;
+}
+
+.menu-buttons button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  color: rgb(243, 241, 241);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-buttons button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Special Buttons */
+.history-btn {
+  background: #2c3e50 !important;
+  color: white;
+}
+
+.history-btn:hover {
+  background: #2c3e50;
+}
+
+.search-btn {
+  background: #2c3e50 !important;
+  color: white; /* Even darker for contrast */
+}
+
+.search-btn:hover {
+  background: #1a252f;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #2c3e50 !important;
+  color: white;
+  gap: 200px;
+}
+
+.logout-btn:hover {
+  background: #1a252f !important;
+}
+
+/* Background Section */
+.bgimg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
